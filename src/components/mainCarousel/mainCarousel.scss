@@ -29,6 +29,7 @@
           height: inherit;
 
           &.overlay {
+            pointer-events: none;
             background-color: #022f7494;
             position: absolute;
             height: 100%;
@@ -87,6 +88,8 @@
 
           p {
             font-size: 24px;
+            color: #fff;
+
             @media (max-width: 768px) {
               font-size: 16px;
             }
@@ -112,7 +115,9 @@
     }
 
     .container-price {
-      color: $green;
+      span {
+        color: $green;
+      }
       position: relative;
 
       .price {

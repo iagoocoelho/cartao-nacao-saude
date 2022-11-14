@@ -1,0 +1,11 @@
+export { default as IconBedHospital } from "./IconBedHospital";
+export { default as IconTooth } from "./IconTooth";
+export { default as IconExamHospital } from "./IconExamHospital";
+export { default as IconBrain } from "./IconBrain";
+export { default as IconNurse } from "./IconNurse";
+export { default as IconTeledicine } from "./IconTeledicine";
+export { default as IconLifeInsurance } from "./IconLifeInsurance";
+export { default as IconFuneral } from "./IconFuneral";
+export { default as IconLife } from "./IconLife";
+export { default as IconPharmacy } from "./IconPharmacy";
+export { default as IconMedicalReport } from "./IconMedicalReport";

@@ -1,0 +1,33 @@
+@import "../../assets/styles/colors";
+
+.pharmacy {
+  position: relative;
+  padding: 6rem 0;
+
+  .pharmacy-overlay {
+    z-index: -1;
+    background-image: url("../../assets/img/farmacia_desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.5);
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    @media (max-width: 768px) {
+      filter: opacity(0.3);
+      background-image: url("../../assets/img/farmacia_mobile.png");
+    }
+  }
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+}

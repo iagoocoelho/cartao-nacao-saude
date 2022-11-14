@@ -1,0 +1,83 @@
+@import "../../assets/styles/colors";
+
+.health-explain {
+  position: relative;
+  padding: 6rem 0;
+
+  ul {
+    padding: 2rem 0;
+  }
+
+  .health-explain-overlay {
+    z-index: -1;
+    background-image: url("../../assets/img/familia.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.5);
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    @media (max-width: 768px) {
+      filter: opacity(0.3);
+      background-position: -1200px 0px;
+    }
+  }
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+
+  .note-container {
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: -60px;
+      right: 10%;
+    }
+
+    .note {
+      font-weight: bold;
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        background-color: transparent;
+      }
+
+      .note-text {
+        display: flex;
+        align-items: center;
+
+
+        @media (max-width: 768px) {
+          backdrop-filter: blur(18px) brightness(0.65);
+          margin: 20px;
+          padding: 1.5em;
+          width: auto;
+          border-radius: 1em;
+          flex-direction: column;
+          text-align: center;
+
+          svg {
+            padding-bottom: 20px;
+          }
+        }
+      }
+
+      h5 {
+        color: $green;
+      }
+
+      background-color: #fff;
+      border-radius: 1rem;
+    }
+  }
+}

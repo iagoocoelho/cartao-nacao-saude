@@ -1,0 +1,54 @@
+@import "../../assets/styles/colors";
+
+.telemedicine-einstein {
+  position: relative;
+  padding: 6rem 0;
+
+  ul {
+    padding: 2rem 0;
+
+    li {
+      color: $mainColor;
+      display: flex;
+      align-items: center;
+      padding: 0.4em 0;
+
+      svg {
+        padding-right: 15px;
+
+        &.listCheck {
+          padding-right: 10px;
+        }
+        &.clip {
+          padding-right: 22px;
+        }
+      }
+    }
+  }
+
+  .telemedicine-einstein-overlay {
+    z-index: -1;
+    background-image: url("../../assets/img/telemedicina.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.5);
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    @media (max-width: 768px) {
+      filter: opacity(0.3);
+    }
+  }
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+}

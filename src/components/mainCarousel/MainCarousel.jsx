@@ -17,7 +17,9 @@ export const MainCarousel = () => {
               Benefícios e descontos em consultas, exames e muito mais. Venha
               conhecer.
             </p>
-            <Button>Saiba Mais</Button>
+            <button className="btn-green-hover-blue shadow-lg">
+              Saiba Mais
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -30,7 +32,9 @@ export const MainCarousel = () => {
               Orientação médica on-line 24 horas por dia, direto no seu celular,
               tablet ou computador
             </p>
-            <Button>Saiba Mais</Button>
+            <button className="btn-green-hover-blue shadow-lg">
+              Saiba Mais
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -43,7 +47,9 @@ export const MainCarousel = () => {
               Consultas presenciais, exames laboratoriais e farmácias com até
               80% de desconto
             </p>
-            <Button>Saiba Mais</Button>
+            <button className="btn-green-hover-blue shadow-lg">
+              Saiba Mais
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -53,7 +59,9 @@ export const MainCarousel = () => {
           <Carousel.Caption>
             <img src={portoSeguroLogo} alt="" />
             <p>Seguros Assistenciais</p>
-            <Button>Saiba Mais</Button>
+            <button className="btn-green-hover-blue shadow-lg">
+              Saiba Mais
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -64,7 +72,9 @@ export const MainCarousel = () => {
             <h3 className="fw-bold">
               Educação com descontos especiais Cruzeiro do Sul
             </h3>
-            <Button>Saiba Mais</Button>
+            <button className="btn-green-hover-blue shadow-lg">
+              Saiba Mais
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

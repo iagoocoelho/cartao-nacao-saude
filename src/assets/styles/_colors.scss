@@ -1,9 +1,17 @@
 $gray: #333;
+$textColorGray: #242424;
+$textLightGray: #8a8a8a;
 $green: #30c342;
-$mainColor: #022F74;
+$greenHover: #30b23f;
+$mainColor: #022f74;
+$bgGray: #F8F8F8;
 
 :root {
   --gray: $gray;
   --green: $green;
+  --greenHover: $greenHover;
   --mainColor: $mainColor;
+  --textColorGray: $textColorGray;
+  --bgGray: $bgGray;
+  --textLightGray: $textLightGray;
 }

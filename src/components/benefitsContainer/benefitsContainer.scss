@@ -1,0 +1,40 @@
+@import "../../assets/styles/colors";
+
+.benefits {
+  background-color: $mainColor;
+  padding: 6rem 0 3rem 0;
+
+  .title {
+    color: #fff;
+
+    span {
+      color: $green;
+    }
+  }
+
+  .react-multi-carousel-list {
+    .card {
+      height: 100%;
+      margin: 0 10px;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+
+      svg {
+        margin-bottom: 20px;
+      }
+
+      .card-text {
+        color: $textLightGray;
+      }
+    }
+
+    .react-multiple-carousel__arrow {
+      background-color: #30c342;
+      &:hover {
+        background-color: #30b23f;
+      }
+    }
+  }
+}

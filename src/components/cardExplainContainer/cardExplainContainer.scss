@@ -1,0 +1,14 @@
+@import "../../assets/styles/colors";
+
+.card-explain {
+  background-color: $bgGray;
+  padding: 3rem 0;
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+}
