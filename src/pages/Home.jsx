@@ -8,6 +8,9 @@ import BenefitsContainer from "components/benefitsContainer/BenefitsContainer";
 import TelemedicineEinstein from "components/telemedicineEinstein/telemedicineEinstein";
 import PortoSeguroContainer from "components/portoSeguroContainer/portoSeguroContainer";
 import PharmacyContainer from "components/pharmacyContainer/pharmacyContainer";
+import ExamsContainer from "components/examsContainer/examsContainer";
+import MedicalAppointments from "components/medicalAppointmentsContainer/medicalAppointmentsContainer";
+import CruzeiroDoSulContainer from "components/cruzeiroDoSulContainer/cruzeiroDoSulContainer";
 
 export const Home = () => {
   return (
@@ -24,6 +27,9 @@ export const Home = () => {
       <TelemedicineEinstein />
       <PortoSeguroContainer />
       <PharmacyContainer />
+      <ExamsContainer />
+      <MedicalAppointments />
+      <CruzeiroDoSulContainer />
     </>
   );
 };
