@@ -1,0 +1,41 @@
+@import "./_colors.scss";
+
+img {
+  max-width: 100%;
+}
+
+.f-text {
+  font-size: 16px;
+}
+
+.f-subtitle {
+  font-size: 20px;
+}
+
+a.nav-link {
+  color: $mainColor;
+  position: relative;
+
+  &.active {
+    &:after {
+      content: "";
+      height: 3px;
+      position: absolute;
+      width: calc(100% - 40px);
+      display: block;
+      bottom: -3px;
+      left: 20px;
+      background-color: $mainColor;
+    }
+  }
+}
+
+.green-color,
+.bg-green {
+  background-color: $green;
+}
+
+.main-color,
+.bg-main-color {
+  background-color: $mainColor;
+}

@@ -1,0 +1,140 @@
+@import "../../assets/styles/colors";
+
+.main-carousel {
+  display: flex;
+  margin: 160px 0 60px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .carousel {
+    width: 960px;
+    height: 436px;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
+
+    .carousel-inner {
+      height: inherit;
+      border-radius: 25px;
+
+      .carousel-item {
+        height: inherit;
+
+        div.image {
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: inherit;
+
+          &.overlay {
+            background-color: #022f7494;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+          }
+
+          &.doctor {
+            background-image: url("../../assets/img/doctor.jpg");
+          }
+
+          &.einsteinConecta {
+            background-image: url("../../assets/img/einsteinconecta.jpg");
+          }
+
+          &.doctorBlood {
+            background-image: url("../../assets/img/doctor-holding-blood-test-tube.jpg");
+          }
+
+          &.seguros {
+            background-image: url("../../assets/img/seguros.jpg");
+          }
+
+          &.educacaoCruzeiroSul {
+            background-image: url("../../assets/img/educacao-cruzeirodosul.jpg");
+          }
+        }
+
+        .carousel-caption {
+          position: absolute;
+          right: 15%;
+          top: 20%;
+          left: 15%;
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+          text-align: initial;
+          color: #fff;
+          max-width: 50%;
+
+          @media (max-width: 768px) {
+            max-width: initial;
+          }
+
+          h3,
+          img,
+          p {
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            font-size: 35px;
+            @media (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+
+          p {
+            font-size: 24px;
+            @media (max-width: 768px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-pack {
+    color: $mainColor;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+
+    .f-subtitle {
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
+    }
+
+    .container-price {
+      color: $green;
+      position: relative;
+
+      .price {
+        font-size: 8em;
+      }
+
+      .currency {
+        font-size: 1.5em;
+      }
+
+      .last-price {
+        font-size: 1.5em;
+        position: absolute;
+        top: 2em;
+      }
+    }
+
+    .classe {
+      color: $mainColor;
+      position: absolute;
+      bottom: -10px;
+      right: 35px;
+    }
+  }
+}
