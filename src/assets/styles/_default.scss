@@ -43,9 +43,12 @@ a.nav-link {
   }
 }
 
-.green-color,
 .bg-green {
   background-color: $green;
+}
+
+.green-color {
+  color: $green;
 }
 
 button {

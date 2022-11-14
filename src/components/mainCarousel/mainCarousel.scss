@@ -115,13 +115,15 @@
     }
 
     .container-price {
+      font-weight: bold;
+
       span {
         color: $green;
       }
       position: relative;
 
       .price {
-        font-size: 8em;
+        font-size: 6em;
       }
 
       .currency {
@@ -131,7 +133,7 @@
       .last-price {
         font-size: 1.5em;
         position: absolute;
-        top: 2em;
+        top: 1.5em;
       }
     }
 

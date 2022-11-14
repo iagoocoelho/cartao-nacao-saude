@@ -11,6 +11,7 @@ import PharmacyContainer from "components/pharmacyContainer/pharmacyContainer";
 import ExamsContainer from "components/examsContainer/examsContainer";
 import MedicalAppointments from "components/medicalAppointmentsContainer/medicalAppointmentsContainer";
 import CruzeiroDoSulContainer from "components/cruzeiroDoSulContainer/cruzeiroDoSulContainer";
+import OursPackagesContainer from "components/oursPackagesContainer/oursPackagesContainer";
 
 export const Home = () => {
   return (
@@ -30,6 +31,7 @@ export const Home = () => {
       <ExamsContainer />
       <MedicalAppointments />
       <CruzeiroDoSulContainer />
+      <OursPackagesContainer />
     </>
   );
 };

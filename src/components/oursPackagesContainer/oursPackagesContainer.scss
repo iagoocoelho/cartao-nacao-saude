@@ -1,0 +1,79 @@
+@import "../../assets/styles/colors";
+
+.ours-packages {
+  position: relative;
+  padding: 6rem 0;
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+
+  .packages-container {
+    display: flex;
+
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    min-width: 250px;
+    max-width: 350px;
+    margin: 15px;
+    border: none;
+
+    .card-title {
+      font-weight: bold;
+      color: $mainColor;
+      font-size: 24px;
+    }
+
+    .container-price {
+      font-weight: bold;
+
+      span {
+        color: $green;
+      }
+      position: relative;
+
+      .price {
+        font-size: 3em;
+      }
+
+      .currency {
+        font-size: 1.5em;
+      }
+
+      .last-price {
+        font-size: 1.5em;
+        position: absolute;
+        top: 0.5em;
+      }
+    }
+
+    .classe {
+      color: $mainColor;
+      font-weight: normal;
+    }
+
+    .card-description {
+      li {
+        padding: 5px 0;
+      }
+
+      li.inactive {
+        color: #b7b7b7;
+
+        svg {
+          position: relative;
+          left: 2px;
+        }
+      }
+    }
+  }
+}
