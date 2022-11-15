@@ -14,7 +14,7 @@ export const Header = () => {
       </Container>
       <Navbar expand="lg" className="shadow-sm py-4" fixed="top">
         <Container>
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="#">
             <img src={logo} class="img-fluid" alt="logo cartão saúde" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

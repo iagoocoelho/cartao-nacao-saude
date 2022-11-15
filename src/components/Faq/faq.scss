@@ -1,0 +1,56 @@
+@import "../../assets/styles/colors";
+
+.faq {
+  position: relative;
+  padding: 3rem 0;
+
+  .consultas-overlay {
+    background-color: $bgGray;
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+
+  .title {
+    color: $mainColor;
+    padding: 30px 0;
+  }
+
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        font-weight: bold;
+        color: $textColorGray;
+
+        &.active {
+          color: #fff;
+          background-color: $mainColor !important;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .accordion-item {
+      .accordion-button {
+        font-weight: bold;
+        color: $mainColor;
+
+        &[aria-expanded="true"] {
+          color: $green;
+        }
+      }
+
+      .accordion-body {
+        color: #434D5B;
+
+        .list-style-dot li {
+          list-style: disc;
+        }
+      }
+    }
+  }
+}

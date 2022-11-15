@@ -3,7 +3,7 @@ import Home from "pages/Home";
 
 const Routers = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path={"/"} element={<Home />} />
   </Routes>
 );
 

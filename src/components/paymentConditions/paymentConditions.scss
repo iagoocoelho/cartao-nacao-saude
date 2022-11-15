@@ -1,0 +1,29 @@
+@import "../../assets/styles/colors";
+
+.payments-conditions {
+  position: relative;
+  padding: 3rem 0;
+
+  .payment-text {
+    font-size: 14px;
+    color: #6F7275;
+  }
+
+  .consultas-overlay {
+    background-color: $bgGray;
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+
+  .title {
+    color: $textColorGray;
+
+    span {
+      color: $green;
+    }
+  }
+}

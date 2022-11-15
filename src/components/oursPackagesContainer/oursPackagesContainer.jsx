@@ -1,24 +1,11 @@
 import React from "react";
 import { MainContainer } from "components/container/MainContainer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import CardPackage from "./cardPackage";
 import "./oursPackagesContainer.scss";
 
-let teste = {
-  price: "",
-  lastPrice: "",
-  features: [
-    {
-      desc: "",
-      active: false,
-    },
-  ],
-};
-
 export const OursPackagesContainer = () => {
   return (
-    <div className="ours-packages">
+    <div className="ours-packages" id="pacotes">
       <MainContainer>
         <div class="col">
           <h2 className="fs-2 title text-center">Nossos Pacotes</h2>

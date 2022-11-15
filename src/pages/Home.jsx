@@ -12,6 +12,9 @@ import ExamsContainer from "components/examsContainer/examsContainer";
 import MedicalAppointments from "components/medicalAppointmentsContainer/medicalAppointmentsContainer";
 import CruzeiroDoSulContainer from "components/cruzeiroDoSulContainer/cruzeiroDoSulContainer";
 import OursPackagesContainer from "components/oursPackagesContainer/oursPackagesContainer";
+import GetContactContainer from "components/getContactContainer/getContactContainer";
+import PaymentConditions from "components/paymentConditions/paymentConditions";
+import FaqContainer from "components/Faq/FaqContainer";
 
 export const Home = () => {
   return (
@@ -32,6 +35,9 @@ export const Home = () => {
       <MedicalAppointments />
       <CruzeiroDoSulContainer />
       <OursPackagesContainer />
+      <GetContactContainer />
+      <PaymentConditions />
+      <FaqContainer />
     </>
   );
 };
