@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Button } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "./mainCarousel.scss";
 import logoEinstein from "assets/img/logo-einstein.png";
 import portoSeguroLogo from "assets/img/porto-seguro-logo.png";
@@ -17,9 +17,9 @@ export const MainCarousel = () => {
               Benefícios e descontos em consultas, exames e muito mais. Venha
               conhecer.
             </p>
-            <button className="btn-green-hover-blue shadow-lg">
+            <a href="#pacotes" className="btn-green-hover-blue shadow-lg">
               Saiba Mais
-            </button>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -27,14 +27,14 @@ export const MainCarousel = () => {
           <div className="image einsteinConecta" />
           <div className="image overlay" />
           <Carousel.Caption>
-            <img src={logoEinstein} alt="" />
+            <img className="einstein-img" src={logoEinstein} alt="Logo Einstein Conecta" />
             <p>
               Orientação médica on-line 24 horas por dia, direto no seu celular,
               tablet ou computador
             </p>
-            <button className="btn-green-hover-blue shadow-lg">
+            <a href="#pacotes" className="btn-green-hover-blue shadow-lg">
               Saiba Mais
-            </button>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -47,9 +47,9 @@ export const MainCarousel = () => {
               Consultas presenciais, exames laboratoriais e farmácias com até
               80% de desconto
             </p>
-            <button className="btn-green-hover-blue shadow-lg">
+            <a href="#pacotes" className="btn-green-hover-blue shadow-lg">
               Saiba Mais
-            </button>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -59,9 +59,9 @@ export const MainCarousel = () => {
           <Carousel.Caption>
             <img src={portoSeguroLogo} alt="" />
             <p>Seguros Assistenciais</p>
-            <button className="btn-green-hover-blue shadow-lg">
+            <a href="#pacotes" className="btn-green-hover-blue shadow-lg">
               Saiba Mais
-            </button>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -72,9 +72,9 @@ export const MainCarousel = () => {
             <h3 className="fw-bold">
               Educação com descontos especiais Cruzeiro do Sul
             </h3>
-            <button className="btn-green-hover-blue shadow-lg">
+            <a href="#pacotes" className="btn-green-hover-blue shadow-lg">
               Saiba Mais
-            </button>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

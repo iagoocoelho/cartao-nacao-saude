@@ -39,7 +39,7 @@ export const CardExplainContainer = () => {
               muito mais.
             </li>
           </ul>
-          <button className="btn-green">Quero já</button>
+          <a href="#pacotes" className="btn-green">Quero já</a>
         </div>
       </MainContainer>
     </div>

@@ -72,7 +72,7 @@ export const TelemedicineEinstein = () => {
                 Disponível 24 hrs por dia, 7 dias por semana
               </li>
             </ul>
-            <button className="btn-green">Começar agora</button>
+            <a href="#pacotes" className="btn-green">Começar agora</a>
           </div>
         </div>
       </MainContainer>

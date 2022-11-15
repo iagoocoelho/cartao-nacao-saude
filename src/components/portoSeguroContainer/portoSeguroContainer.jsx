@@ -24,7 +24,7 @@ export const PortoSeguroContainer = () => {
 
           <p>R$5.500,00 para um dos momentos mais delicados.</p>
 
-          <button className="btn-green">Assine já</button>
+          <a href="#pacotes" className="btn-green">Assine já</a>
         </div>
       </MainContainer>
     </div>

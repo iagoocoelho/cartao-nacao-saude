@@ -73,6 +73,10 @@
             max-width: initial;
           }
 
+          .einstein-img {
+            max-width: 200px;
+          }
+
           h3,
           img,
           p {
@@ -140,8 +144,10 @@
     .classe {
       color: $mainColor;
       position: absolute;
-      bottom: -10px;
-      right: 35px;
+      bottom: -15px;
+      left: 10%;
+      width: 100%;
+      text-align: center;
     }
   }
 }

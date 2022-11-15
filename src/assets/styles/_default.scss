@@ -51,7 +51,7 @@ a.nav-link {
   color: $green;
 }
 
-button {
+button, a {
   &.btn-green {
     color: #fff;
     background-color: $green;
@@ -60,9 +60,11 @@ button {
     border-radius: 2rem;
     font-weight: bold;
     transition: background-color 0.3s;
+    text-decoration: none;
 
     &:hover {
       background-color: $greenHover;
+      color: #fff;
     }
   }
 
@@ -74,6 +76,7 @@ button {
     border-radius: 2rem;
     font-weight: bold;
     transition: color 0.3s;
+    text-decoration: none;
 
     &:hover {
       color: $mainColor;

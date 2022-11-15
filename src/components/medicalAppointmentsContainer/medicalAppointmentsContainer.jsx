@@ -17,7 +17,7 @@ export const MedicalAppointments = () => {
             presenciais e online.
           </p>
 
-          <button className="btn-green">Quero assinar</button>
+          <a href="#pacotes" className="btn-green">Quero assinar</a>
         </div>
       </MainContainer>
     </div>

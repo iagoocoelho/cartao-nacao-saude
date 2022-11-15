@@ -29,7 +29,7 @@ export const CruzeiroDoSulContainer = () => {
             Presencial, Graduação EAD e Pós-graduação.
           </p>
 
-          <button className="btn-green">Assine já</button>
+          <a href="#pacotes" className="btn-green">Assine já</a>
         </div>
       </MainContainer>
     </div>

@@ -18,7 +18,7 @@ export const ExamsContainer = () => {
             com excelência.
           </p>
 
-          <button className="btn-green">Assine já</button>
+          <a href="#pacotes" className="btn-green">Assine já</a>
         </div>
       </MainContainer>
     </div>

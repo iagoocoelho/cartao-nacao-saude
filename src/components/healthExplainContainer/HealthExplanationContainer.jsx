@@ -64,7 +64,7 @@ export const healthExplainContainer = () => {
                 descontos e taxa de matrícula grátis.
               </li>
             </ul>
-            <button className="btn-green">Assine já</button>
+            <a href="#pacotes" className="btn-green">Assine já</a>
           </div>
         </div>
 
