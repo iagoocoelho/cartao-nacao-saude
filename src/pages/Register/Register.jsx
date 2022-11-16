@@ -19,7 +19,7 @@ export const Register = ({ registerRequest, registerState }) => {
   }, [pathname]);
 
   useEffect(() => {
-    if (state.packageId) setPackageId(state.packageId);
+    if (state?.packageId !== null) setPackageId(state?.packageId);
   }, [state]);
 
   const [data, setData] = useState({
