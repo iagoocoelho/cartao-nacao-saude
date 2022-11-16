@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Form, Row, Col } from "react-bootstrap";
 import { MainContainer } from "components/container/MainContainer";
 import { useLocation } from "react-router-dom";
@@ -18,7 +18,7 @@ export const Register = ({ registerRequest, registerState }) => {
     setPath(pathname.split("/")[1]);
   }, [pathname]);
 
-  useMemo(() => {
+  useEffect(() => {
     if (state.packageId) setPackageId(state.packageId);
   }, [state]);
 
