@@ -20,7 +20,7 @@ export const Register = ({ registerRequest, registerState }) => {
 
   useMemo(() => {
     if (state.packageId) setPackageId(state.packageId);
-  }, [state.packageId]);
+  }, [state]);
 
   const [data, setData] = useState({
     package_id: 0,
