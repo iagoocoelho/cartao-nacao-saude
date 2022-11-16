@@ -8,7 +8,7 @@ export const PortoSeguroContainer = () => {
     <div className="porto-seguro">
       <div className="porto-seguro-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-6 px-2">
+        <div className="col-md-12 col-lg-6 px-2">
           <div className="col-6 py-4">
             <img src={portoSeguroLogo} alt="Logo porto seguro" />
           </div>

@@ -7,7 +7,7 @@ export const GetContactContainer = () => {
   return (
     <div className="get-contact" id="contact">
       <MainContainer>
-        <div class="col px-2 d-flex justify-content-around">
+        <div className="col px-2 d-flex justify-content-around">
           <h2 className="fs-2 title">
             <span>Alguma dúvida?</span> Contate-nos!
           </h2>

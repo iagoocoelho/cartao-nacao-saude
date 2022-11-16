@@ -9,7 +9,7 @@ export const healthExplainContainer = () => {
     <div className="health-explain">
       <div className="health-explain-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-6 px-2">
+        <div className="col-md-12 col-lg-6 px-2">
           <h2 className="fs-2 title">
             Uma nação só é forte se tem acesso a saúde, educação e prevenção
           </h2>

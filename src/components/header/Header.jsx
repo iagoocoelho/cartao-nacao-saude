@@ -17,7 +17,7 @@ export const Header = () => {
         </div>
         <Container className="p-4">
           <Navbar.Brand href="#">
-            <img src={logo} class="img-fluid" alt="logo cartão saúde" />
+            <img src={logo} className="img-fluid" alt="logo cartão saúde" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse

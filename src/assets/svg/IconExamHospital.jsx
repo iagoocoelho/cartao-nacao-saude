@@ -14,21 +14,21 @@ const IconExamHospital = (props) => {
     >
       <g>
         <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0">
-          <stop offset="0" stop-color="#022f74" />
-          <stop offset="1" stop-color="#30c342" />
+          <stop offset="0" stopColor="#022f74" />
+          <stop offset="1" stopColor="#30c342" />
         </linearGradient>
         <g xmlns="http://www.w3.org/2000/svg">
           <path
             d="m424 8h-336a8 8 0 0 0 -8 8v480a8 8 0 0 0 8 8h336a8 8 0 0 0 8-8v-480a8 8 0 0 0 -8-8zm-8 480h-320v-464h320z"
             fill="url(#linear)"
             data-original="url(#linear)"
-            class=""
+            className=""
           ></path>
           <path
             d="m168 208h224a8 8 0 0 0 0-16h-224a8 8 0 0 0 0 16z"
             fill="url(#linear)"
             data-original="url(#linear)"
-            class=""
+            className=""
           ></path>
           <path
             d="m168 232h104a8 8 0 0 0 0-16h-104a8 8 0 0 0 0 16z"
@@ -44,7 +44,7 @@ const IconExamHospital = (props) => {
             d="m120 232h24a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8h-24a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8zm8-24h8v8h-8z"
             fill="url(#linear)"
             data-original="url(#linear)"
-            class=""
+            className=""
           ></path>
           <path
             d="m168 264h224a8 8 0 0 0 0-16h-224a8 8 0 0 0 0 16z"
@@ -90,13 +90,13 @@ const IconExamHospital = (props) => {
             d="m232 144a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-16h16a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8h-16v-16a8 8 0 0 0 -8-8h-32a8 8 0 0 0 -8 8v16h-16a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h16zm-8-32v-16h16a8 8 0 0 0 8-8v-16h16v16a8 8 0 0 0 8 8h16v16h-16a8 8 0 0 0 -8 8v16h-16v-16a8 8 0 0 0 -8-8z"
             fill="url(#linear)"
             data-original="url(#linear)"
-            class=""
+            className=""
           ></path>
           <path
             d="m256 176a72 72 0 1 0 -72-72 72.081 72.081 0 0 0 72 72zm0-128a56 56 0 1 1 -56 56 56.063 56.063 0 0 1 56-56z"
             fill="url(#linear)"
             data-original="url(#linear)"
-            class=""
+            className=""
           ></path>
           <path
             d="m344 360a56 56 0 1 0 56 56 56.063 56.063 0 0 0 -56-56zm0 96a40 40 0 1 1 40-40 40.045 40.045 0 0 1 -40 40z"

@@ -7,7 +7,7 @@ export const ExamsContainer = () => {
     <div className="exames">
       <div className="exames-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-6 px-2">
+        <div className="col-md-12 col-lg-6 px-2">
           <h2 className="fs-2 title">
             Exames <span>laboratoriais e imagem</span>
           </h2>

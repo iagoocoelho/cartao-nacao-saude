@@ -1,8 +1,11 @@
 .register {
-    background-color: #F8F8F8;
+  background-color: #f8f8f8;
 
-    .title {
-        text-transform: capitalize;
-    }
+  .title {
+    text-transform: capitalize;
   }
-  
+
+  .btn-green {
+    min-width: 200px;
+  }
+}

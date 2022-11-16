@@ -10,13 +10,13 @@ const IconLife = (props) => {
       y="0"
       viewBox="0 0 64 64"
       xml="preserve"
-      class=""
+      className=""
     >
       <g>
         <defs xmlns="http://www.w3.org/2000/svg">
           <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0">
-            <stop offset="0" stop-color="#022f74" />
-            <stop offset="1" stop-color="#30c342" />
+            <stop offset="0" stopColor="#022f74" />
+            <stop offset="1" stopColor="#30c342" />
           </linearGradient>
         </defs>
         <g

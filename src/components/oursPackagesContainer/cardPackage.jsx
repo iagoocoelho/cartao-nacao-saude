@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./oursPackagesContainer.scss";
 
 export const CardPackage = ({ data }) => {
   return (
-    <div class="card shadow-lg rounded">
-      <div class="card-body">
-        <h5 class="card-title">{data.packageName}</h5>
+    <div className="card shadow-lg rounded">
+      <div className="card-body">
+        <h5 className="card-title">{data.packageName}</h5>
         <div className="container-pack">
           <div className="container-price m-0">
             <span className="currency">R$</span>
@@ -17,12 +18,12 @@ export const CardPackage = ({ data }) => {
         </div>
         <p className="classe">Por mês</p>
         <h5 className="green-color">Características</h5>
-        <ul class="card-description p-0">
+        <ul className="card-description p-0">
           {!!data.features.length &&
-            data.features.map((carac) => {
+            data.features.map((carac, i) => {
               if (carac.active) {
                 return (
-                  <li>
+                  <li key={i}>
                     <FontAwesomeIcon
                       icon={faCheck}
                       size={"lg"}
@@ -34,7 +35,7 @@ export const CardPackage = ({ data }) => {
                 );
               } else {
                 return (
-                  <li className="inactive">
+                  <li className="inactive" key={i}>
                     <FontAwesomeIcon
                       icon={faXmark}
                       size={"lg"}
@@ -47,6 +48,18 @@ export const CardPackage = ({ data }) => {
               }
             })}
         </ul>
+
+        <div className="text-center py-4">
+          <Link
+            className="btn-green"
+            to={{
+              pathname: data.href,
+            }}
+            state={{ packageId: data.packageId, vendor_cpf: data.vendor_cpf }}
+          >
+            Assinar
+          </Link>
+        </div>
       </div>
     </div>
   );

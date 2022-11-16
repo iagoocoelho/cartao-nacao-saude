@@ -6,14 +6,14 @@ export const FaqContainer = () => {
   return (
     <div className="faq">
       <MainContainer>
-        <div class="col px-2 text-center">
+        <div className="col px-2 text-center">
           <h2 className="fs-2 title">FAQ</h2>
         </div>
         <div className="col">
-          <ul class="nav nav-pills nav-fill" role="tablist">
-            <li class="nav-item" role="presentation">
+          <ul className="nav nav-pills nav-fill" role="tablist">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link active fw-bold"
+                className="nav-link active fw-bold"
                 id="home-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#home-tab-pane"
@@ -25,9 +25,9 @@ export const FaqContainer = () => {
                 Rede <span className="green-color">Credenciada</span>
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link"
+                className="nav-link"
                 id="profile-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#profile-tab-pane"
@@ -39,9 +39,9 @@ export const FaqContainer = () => {
                 Tele<span className="green-color">Medicina</span>
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link green-color"
+                className="nav-link green-color"
                 id="contact-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#contact-tab-pane"
@@ -55,19 +55,19 @@ export const FaqContainer = () => {
             </li>
           </ul>
 
-          <div class="tab-content">
+          <div className="tab-content">
             <div
-              class="tab-pane fade show active"
+              className="tab-pane fade show active"
               id="home-tab-pane"
               role="tabpanel"
               aria-labelledby="home-tab"
-              tabindex="0"
+              tabIndex="0"
             >
-              <div class="accordion" id="accordion-rede-credenciada">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-1">
+              <div className="accordion" id="accordion-rede-credenciada">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-1">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-1"
@@ -79,10 +79,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-1"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-1"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       O CARTÃO NAÇÃO SAÚDE não é um plano de saúde convencional.
                       Somos um Sistema de Saúde, com teleatendimento, seguros e
                       com credenciamento focado em consultas e exames com
@@ -94,10 +94,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-2">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-2">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-2"
@@ -109,10 +109,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-2"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-2"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         1. Tenha em mãos o cartão virtual de identificação
                         dentro do prazo de validade, informe que utilizará a
@@ -135,10 +135,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-3">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-3">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-3"
@@ -151,10 +151,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-3"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-3"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Nossa REDE CREDENCIADA não tem restrição de utilização,
                         desde que haja disponibilidade de rede contratada na
@@ -261,10 +261,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-4">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-4">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-4"
@@ -277,10 +277,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-4"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-4"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Não. Os valores e formas de pagamento variam de acordo
                         com o local de atendimento escolhido.
@@ -289,10 +289,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-5">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-5">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-5"
@@ -304,10 +304,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-5"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-5"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         O valor das consultas varia por região, estabelecimento
                         e especialidade, porém sempre com valor mais acessível
@@ -323,10 +323,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-6">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-6">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-6"
@@ -338,10 +338,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-6"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-6"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         O pagamento varia de acordo com o estabelecimento
                         escolhido podendo ser: Dinheiro, Cartão de Débito,
@@ -356,10 +356,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-7">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-7">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-7"
@@ -371,10 +371,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-7"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-7"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Diferente do plano de saúde, não existe carência para
                         nenhum tipo de exame. Você pode utilizar todos os
@@ -385,10 +385,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-8">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-8">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-8"
@@ -400,10 +400,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-8"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-8"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         A rede de estabelecimentos de saúde é ampla e pode
                         abranger todo território nacional de acordo com o fluxo
@@ -422,10 +422,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-9">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-9">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-9"
@@ -438,10 +438,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-9"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-9"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         É possível consultar os valores de consulta, exames e
                         procedimentos solicitando atendimento através do chat ou
@@ -451,10 +451,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-rede-10">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-rede-10">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-rede-10"
@@ -466,10 +466,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-rede-10"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-rede-10"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Sim. O agendamento de exames será realizado apenas
                         mediante ao envio do pedido médico, pois será exigido
@@ -486,17 +486,17 @@ export const FaqContainer = () => {
             </div>
 
             <div
-              class="tab-pane fade"
+              className="tab-pane fade"
               id="profile-tab-pane"
               role="tabpanel"
               aria-labelledby="profile-tab"
-              tabindex="0"
+              tabIndex="0"
             >
-              <div class="accordion" id="accordion-telemedicina">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-1">
+              <div className="accordion" id="accordion-telemedicina">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-1">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-1"
@@ -509,10 +509,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-1"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-1"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Todas as avaliações são realizadas por videochamada,
                       através da internet, de forma que tanto médico quanto
                       paciente veem um ao outro ao vivo, podendo interagir
@@ -535,10 +535,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-2">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-2">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-2"
@@ -550,10 +550,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-2"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-2"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Os dados obtidos pelo médico durante a avaliação
                         possibilitarão a construção de uma hipótese diagnóstica,
@@ -570,10 +570,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-3">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-3">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-3"
@@ -585,10 +585,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-3"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-3"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Em mais de 80% dos casos a avaliação por telemedicina
                         pelo Einstein Conecta é suficiente para uma orientação
@@ -606,10 +606,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-4">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-4">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-4"
@@ -621,10 +621,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-4"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-4"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         O paciente será atendido pela equipe médica com a
                         qualidade Einstein, com ampla experiência em atendimento
@@ -635,10 +635,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-5">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-5">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-5"
@@ -650,10 +650,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-5"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-5"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Não, o Einstein Conecta é um serviço do Centro de
                         Telemedicina do Hospital Israelita Albert Einstein.
@@ -665,10 +665,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-6">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-6">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-6"
@@ -680,10 +680,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-6"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-6"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Não, a contratação do Einstein Conecta dá direito a ter
                         acesso a orientações, mas não estão inclusos exames e
@@ -693,10 +693,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-7">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-7">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-7"
@@ -708,10 +708,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-7"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-7"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p className="fw-bold">O atendimento é rapido e fácil</p>
                       <ul>
                         <li>
@@ -744,10 +744,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-8">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-8">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-8"
@@ -759,10 +759,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-8"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-8"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Não. O atendimento do Einstein Conecta é o mesmo de um
                         pronto atendimento, ou seja, você será atendido pelo
@@ -772,10 +772,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-9">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-9">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-9"
@@ -787,10 +787,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-9"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-9"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Sempre que houver algum dos sintomas abaixo,
                         recomendamos que o atendimento seja feito em um pronto
@@ -813,10 +813,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-10">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-10">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-10"
@@ -828,10 +828,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-10"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-10"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Sim, você pode utilizar os serviços do Conecta a partir
                         de qualquer lugar do mundo com acesso a banda larga de
@@ -842,10 +842,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-11">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-11">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-11"
@@ -857,10 +857,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-11"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-11"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Não. A receita médica tem validade apenas em território
                         brasileiro. No entanto, nossa equipe está preparada para
@@ -875,10 +875,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-12">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-12">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-12"
@@ -890,10 +890,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-12"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-12"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         O aplicativo do Einstein Conecta está disponível para os
                         sistemas operacionais Android e iOS. Alternativamente, o
@@ -906,10 +906,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-13">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-13">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-13"
@@ -922,10 +922,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-13"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-13"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Assim que restabelecer a sua conexão, reinicie o fluxo
                         de atendimento para retomar a consulta.
@@ -934,10 +934,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-14">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-14">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-14"
@@ -950,10 +950,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-14"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-14"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Você pode verificar se ela não está somente desativada
                         na tela da videoconferência, tocando/clicando no botão
@@ -965,10 +965,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-telemedicina-15">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-telemedicina-15">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-telemedicina-15"
@@ -981,10 +981,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-telemedicina-15"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-telemedicina-15"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         Os prontuários eletrônicos são armazenados nos
                         servidores do Einstein de forma segura, conforme
@@ -998,17 +998,17 @@ export const FaqContainer = () => {
             </div>
 
             <div
-              class="tab-pane fade"
+              className="tab-pane fade"
               id="contact-tab-pane"
               role="tabpanel"
               aria-labelledby="contact-tab"
-              tabindex="0"
+              tabIndex="0"
             >
-              <div class="accordion" id="accordion-seguros">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-seguros-1">
+              <div className="accordion" id="accordion-seguros">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-seguros-1">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-seguros-1"
@@ -1020,10 +1020,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-seguros-1"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-seguros-1"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Assistência Funerária, Seguro de vida, título de
                       captalização, acidentes pessoais, no valor de R$5.000,00,
                       tudo isso incluso no seu pacote.
@@ -1031,10 +1031,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-seguros-2">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-seguros-2">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-seguros-2"
@@ -1046,10 +1046,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-seguros-2"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-seguros-2"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         No momento que você mais precisar é só entrar em contato
                         com nossa central na porto seguro através do número 0800
@@ -1059,10 +1059,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-seguros-3">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-seguros-3">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-seguros-3"
@@ -1075,10 +1075,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-seguros-3"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-seguros-3"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         São 5 chances por mês de ganhar o sorteio. Se o seu cpf
                         for o sorteado você receberá uma ligação da Porto Seguro
@@ -1089,10 +1089,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-seguros-4">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-seguros-4">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-seguros-4"
@@ -1105,10 +1105,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-seguros-4"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-seguros-4"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         O limite de idade para aderir a este contrato para
                         efeitos de recebimento dos benefícios de seguro de
@@ -1119,10 +1119,10 @@ export const FaqContainer = () => {
                   </div>
                 </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="questions-seguros-5">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="questions-seguros-5">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#question-seguros-5"
@@ -1135,10 +1135,10 @@ export const FaqContainer = () => {
                   </h2>
                   <div
                     id="question-seguros-5"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="questions-seguros-5"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       <p>
                         *O seguro de acidentes pessoais, cesta básica, auxílio
                         funeral e título de capitalização são garantidos pela

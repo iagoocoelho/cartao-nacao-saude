@@ -8,7 +8,7 @@ export const PharmacyContainer = () => {
     <div className="pharmacy">
       <div className="pharmacy-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-8 px-2">
+        <div className="col-md-12 col-lg-8 px-2">
           <h2 className="fs-2 title">
             Medicamentos com até <span>30% de desconto</span>
           </h2>

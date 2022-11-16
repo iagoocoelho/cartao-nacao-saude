@@ -16,11 +16,11 @@ export const PaymentConditions = () => {
         <div className="row">
           <div className="col-md-12 col-lg-3">
             <div className="pe-4">
-              <img src={logo} class="img-fluid mb-4" alt="logo cartão saúde" />
+              <img src={logo} className="img-fluid mb-4" alt="logo cartão saúde" />
             </div>
           </div>
           <div className="col-md-12 col-lg-9">
-            <div class="px-2 d-flex justify-content-around">
+            <div className="px-2 d-flex justify-content-around">
               <p className="payment-text">
                 <strong>*Cartão de desconto não é plano de saúde</strong>, não
                 garante e não se responsabiliza pelos serviços oferecidos e pelo

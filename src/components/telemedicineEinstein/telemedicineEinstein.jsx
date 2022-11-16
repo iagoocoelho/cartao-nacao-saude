@@ -9,7 +9,7 @@ export const TelemedicineEinstein = () => {
     <div className="telemedicine-einstein">
       <div className="telemedicine-einstein-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-6 px-2">
+        <div className="col-md-12 col-lg-6 px-2">
           <h2 className="fs-2 title">
             Telemedicina <span>Einstein Conecta</span>
           </h2>

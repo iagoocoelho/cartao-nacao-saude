@@ -7,7 +7,7 @@ export const MedicalAppointments = () => {
     <div className="consultas">
       <div className="consultas-overlay" />
       <MainContainer>
-        <div class="col-md-12 col-lg-6 px-2">
+        <div className="col-md-12 col-lg-6 px-2">
           <h2 className="fs-2 title">
             Consultas <span>presenciais e online</span>
           </h2>

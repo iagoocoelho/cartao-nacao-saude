@@ -1,0 +1,8 @@
+export const packagesTypes = {
+    PACKAGES_REQUEST: "./packages/PACKAGES_REQUEST",
+    PACKAGES_SUCCESS: "./packages/PACKAGES_SUCCESS",
+    PACKAGES_FAILURE: "./packages/PACKAGES_FAILURE",
+    REGISTER_REQUEST: "./packages/REGISTER_REQUEST",
+    REGISTER_SUCCESS: "./packages/ REGISTER_SUCCESS",
+    REGISTER_FAILURE: "./packages/ REGISTER_FAILURE",
+}
