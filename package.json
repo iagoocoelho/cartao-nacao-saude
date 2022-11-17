@@ -1,7 +1,7 @@
 {
   "name": "cartao-nacao-saude",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://iagoocoelho.github.io/cartao-nacao-saude",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",

@@ -6,8 +6,8 @@ import Toast from "components/toast/Toast";
 const Routers = () => (
   <>
     <Routes>
-      <Route path={"/"} element={<Home />} />
-      <Route path={"/:tipo"} element={<Register />} />
+      <Route exact path={"/cartao-nacao-saude"} element={<Home />} />
+      <Route path={"/cartao-nacao-saude/:tipo"} element={<Register />} />
     </Routes>
     <Toast />
   </>
