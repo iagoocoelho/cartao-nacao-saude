@@ -15,7 +15,7 @@ export const GetContactContainer = () => {
           <ReactWhatsapp
             number="5511916235625"
             message="Oi, estou precisando de atendimento"
-            className="btn-whats"
+            className="btn-green"
           >
             Entre em contato
           </ReactWhatsapp>
