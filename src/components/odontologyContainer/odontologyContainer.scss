@@ -1,12 +1,16 @@
 @import "../../assets/styles/colors";
 
-.cruzeiro-do-sul {
+.odontologia {
   position: relative;
-  padding: 8rem 0;
+  padding: 10rem 0;
 
-  .cruzeiro-do-sul-overlay {
+  @media (max-width: 768px) {
+    padding: 8rem 0;
+  }
+
+  .odontologia-overlay {
     z-index: -1;
-    background-image: url("../../assets/img/ead_desk.jpg");
+    background-image: url("../../assets/img/happy-woman-with-great-smile-clinic.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +22,8 @@
     top: 0;
 
     @media (max-width: 768px) {
-      filter: opacity(0.3);
+      filter: opacity(0.6);
+      background-image: url("../../assets/img/happy-woman-with-great-smile-clinicmobile.jpg");
     }
   }
 

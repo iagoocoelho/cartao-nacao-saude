@@ -1,6 +1,10 @@
 import React from "react";
 import { MainContainer } from "components/container/MainContainer";
-import pharmacyLogo from "assets/img/logos-farmacias.png";
+import drogariaSaoPaulo from "assets/img/logo-drogaria-sao-paulo.png";
+import drogariaPacheco from "assets/img/drogarias-pacheco-logo.png";
+import drogariaPagueMenos from "assets/img/pague-menos-logo.png";
+import drogariaDrogasil from "assets/img/drogasil-logo.png";
+import DrogaRaia from "assets/img/droga-raia-logo.png";
 import "./pharmacyContainer.scss";
 
 export const PharmacyContainer = () => {
@@ -8,7 +12,7 @@ export const PharmacyContainer = () => {
     <div className="pharmacy">
       <div className="pharmacy-overlay" />
       <MainContainer>
-        <div className="col-md-12 col-lg-8 px-2">
+        <div className="col-md-12 col-lg-12 px-2">
           <h2 className="fs-2 title">
             Medicamentos com até <span>30% de desconto</span>
           </h2>
@@ -17,8 +21,12 @@ export const PharmacyContainer = () => {
             Descontos concedidos apenas para os pacotes com rede credenciada*.
           </p>
 
-          <div className="p-4 my-4 bg-white rounded-4">
-            <img src={pharmacyLogo} alt="Logos Farmácias" />
+          <div className="p-4 my-4 bg-white rounded-4 pharmy-container">
+            <img src={drogariaSaoPaulo} alt="Drogaria São Paulo" />
+            <img src={drogariaPacheco} alt="Drogaria Pacheco" />
+            <img src={drogariaPagueMenos} alt="Drogaria Pague Menos" />
+            <img src={drogariaDrogasil} alt="Drogaria Drogasil" />
+            <img src={DrogaRaia} alt="Drogaria Drogaraia" />
           </div>
         </div>
       </MainContainer>

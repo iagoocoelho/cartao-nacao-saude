@@ -21,7 +21,7 @@ span {
   color: $textColorGray;
 }
 
-a.nav-link {
+a.nav-link:not(.btn-green) {
   color: $mainColor;
   font-weight: bold;
   position: relative;
@@ -63,9 +63,9 @@ button, a {
     text-decoration: none;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $greenHover;
-      color: #fff;
+      color: #fff !important;
     }
   }
 

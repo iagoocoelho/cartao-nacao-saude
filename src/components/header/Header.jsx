@@ -35,8 +35,8 @@ export const Header = () => {
                   Solicitar Contato
                 </ReactWhatsapp>
               </Nav.Link>
-              <Nav.Link href="#link" as="li">
-                <button className="btn-green shadow-lg"> Peça já o seu</button>
+              <Nav.Link href="#pacotes" as="a" className="btn-green">
+                Peça já o seu
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -15,6 +15,7 @@ import OursPackagesContainer from "components/oursPackagesContainer/oursPackages
 import GetContactContainer from "components/getContactContainer/getContactContainer";
 import PaymentConditions from "components/paymentConditions/paymentConditions";
 import FaqContainer from "components/Faq/FaqContainer";
+import OdontologyContainer from "components/odontologyContainer/odontologyContainer";
 
 export const Home = () => {
   return (
@@ -33,6 +34,7 @@ export const Home = () => {
       <PharmacyContainer />
       <ExamsContainer />
       <MedicalAppointments />
+      <OdontologyContainer />
       <CruzeiroDoSulContainer />
       <OursPackagesContainer />
       <GetContactContainer />

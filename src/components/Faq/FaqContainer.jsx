@@ -1025,7 +1025,7 @@ export const FaqContainer = () => {
                   >
                     <div className="accordion-body">
                       Assistência Funerária, Seguro de vida, título de
-                      captalização, acidentes pessoais, no valor de R$5.000,00,
+                      captalização, acidentes pessoais, no valor de R$5.500,00,
                       tudo isso incluso no seu pacote.
                     </div>
                   </div>
@@ -1070,7 +1070,7 @@ export const FaqContainer = () => {
                       aria-controls="question-seguros-3"
                     >
                       Se eu ganhar o sorteio como faço para receber os
-                      R$5.000,00 prêmiado?
+                      R$5.500,00 prêmiado?
                     </button>
                   </h2>
                   <div
@@ -1083,7 +1083,7 @@ export const FaqContainer = () => {
                         São 5 chances por mês de ganhar o sorteio. Se o seu cpf
                         for o sorteado você receberá uma ligação da Porto Seguro
                         que fará o procedimento necessário para depositar o
-                        pagamento de R$5.000,00 direto em sua conta bancária.
+                        pagamento de R$5.500,00 direto em sua conta bancária.
                       </p>
                     </div>
                   </div>

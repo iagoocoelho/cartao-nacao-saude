@@ -4,6 +4,27 @@
   position: relative;
   padding: 6rem 0;
 
+  .pharmy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    img {
+      max-width: 220px;
+      padding: 5px 10px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+    }
+  }
+
   .pharmacy-overlay {
     z-index: -1;
     background-image: url("../../assets/img/farmacia_desktop.jpg");

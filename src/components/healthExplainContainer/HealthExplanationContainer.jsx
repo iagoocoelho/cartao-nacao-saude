@@ -63,8 +63,19 @@ export const healthExplainContainer = () => {
                 Educação presencial ou a distância, colégios ou graduação com
                 descontos e taxa de matrícula grátis.
               </li>
+              <li>
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  size={"lg"}
+                  color={"#30c342"}
+                  className="pe-2"
+                />
+                Rede credenciada telemedicina, seguros de R$5.500,00.
+              </li>
             </ul>
-            <a href="#pacotes" className="btn-green">Assine já</a>
+            <a href="#pacotes" className="btn-green">
+              Assine já
+            </a>
           </div>
         </div>
 
