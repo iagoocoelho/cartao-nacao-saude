@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cartao-nacao-saude/static/css/main.76ff66a8.css",
+    "main.css": "/cartao-nacao-saude/static/css/main.7ff44432.css",
     "main.js": "/cartao-nacao-saude/static/js/main.4a2db588.js",
     "static/media/Contrato-de-Servicos-Cartao-Nacao-Saude-e-Beneficios-2022.pdf": "/cartao-nacao-saude/static/media/Contrato-de-Servicos-Cartao-Nacao-Saude-e-Beneficios-2022.1555ca0847a06966b21e.pdf",
     "static/media/farmacia_mobile.png": "/cartao-nacao-saude/static/media/farmacia_mobile.0fedb1dbd05c1b0e54ad.png",
@@ -36,11 +36,11 @@
     "static/media/visa.svg": "/cartao-nacao-saude/static/media/visa.06ec93fad603a9191c051e09df3fb4b8.svg",
     "index.html": "/cartao-nacao-saude/index.html",
     "static/media/master.svg": "/cartao-nacao-saude/static/media/master.1e118ec7d2d1061c08eb268ef4d699d9.svg",
-    "main.76ff66a8.css.map": "/cartao-nacao-saude/static/css/main.76ff66a8.css.map",
+    "main.7ff44432.css.map": "/cartao-nacao-saude/static/css/main.7ff44432.css.map",
     "main.4a2db588.js.map": "/cartao-nacao-saude/static/js/main.4a2db588.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ff66a8.css",
+    "static/css/main.7ff44432.css",
     "static/js/main.4a2db588.js"
   ]
 }
