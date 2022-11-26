@@ -82,7 +82,7 @@ export const BenefitsContainer = () => {
               <h5 className="card-title">Auxílio Funeral</h5>
               <p className="card-text">
                 Em caso de falecimento do beneficiário auxílio funerário no
-                valor de R$5.000,00. Além de cesta básica no valor de R$1.600,00
+                valor de R$5.500,00. Além de cesta básica no valor de R$1.600,00
                 pagos em 4 parcelas de R$400,00
               </p>
             </div>
@@ -93,7 +93,7 @@ export const BenefitsContainer = () => {
               <IconLife width="60px" height="60px" />
               <h5 className="card-title">Seguro Acidentes Pessoais</h5>
               <p className="card-text">
-                Seguro de acidentes pessoais no valor de R$5.000,00 após
+                Seguro de acidentes pessoais no valor de R$5.500,00 após
                 confirmação de incapacidade e invalidez em exercer sua função ou
                 óbito.
               </p>

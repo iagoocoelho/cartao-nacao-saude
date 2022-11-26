@@ -1,6 +1,6 @@
 import React from "react";
 import { MainContainer } from "components/container/MainContainer";
-import portoSeguroLogo from "assets/img/porto-seguro-logo-black.png";
+import cruzeiroLogo from "assets/img/cruzeiro-educacional.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "./cruzeiroDoSulContainer.scss";
@@ -12,7 +12,7 @@ export const CruzeiroDoSulContainer = () => {
       <MainContainer>
         <div className="col-md-12 col-lg-6 px-2">
           <div className="col-6 py-4">
-            <img src={portoSeguroLogo} alt="Logo porto seguro" />
+            <img src={cruzeiroLogo} alt="Logo porto seguro" />
           </div>
 
           <h2 className="fs-2 title">
