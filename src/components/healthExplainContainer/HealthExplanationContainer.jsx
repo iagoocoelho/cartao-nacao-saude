@@ -70,7 +70,7 @@ export const healthExplainContainer = () => {
                   color={"#30c342"}
                   className="pe-2"
                 />
-                Rede credenciada telemedicina, seguros de R$5.500,00.
+                Descontos exclusivos em nossa rede de parceiros.
               </li>
             </ul>
             <a href="#pacotes" className="btn-green">
