@@ -3,8 +3,7 @@ import axios from 'axios';
 import { store } from 'store/store';
 
 const Api = axios.create({
-    baseURL: 'https://9dbea345-9152-4372-a5ff-1b6bc743d0dd.mock.pstmn.io',
-    // baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
+    baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
     headers: {
         'Accept': 'application/json',
     },
@@ -33,8 +32,7 @@ Api.interceptors.response.use(
 
 
 const AuthApi = axios.create({
-    baseURL: 'https://9dbea345-9152-4372-a5ff-1b6bc743d0dd.mock.pstmn.io',
-    // baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
+    baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
     auth: {
         username: "cartaonacaosaude",
         password: 'tw7qQFcNlh'
