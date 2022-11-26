@@ -15,7 +15,7 @@ export const Register = ({ registerRequest, registerState }) => {
   const [packageId, setPackageId] = useState(0);
 
   useMemo(() => {
-    setPath(pathname.split("/")[2]);
+    setPath(pathname.split("/")[1]);
   }, [pathname]);
 
   useEffect(() => {
