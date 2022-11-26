@@ -40,7 +40,9 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
             {!!packages.length &&
               packages.map((item) => {
                 if (item.active) {
-                  return <CardPackage data={item} />;
+                  return (
+                    <CardPackage data={{ ...item, vendor_cpf: vendorId }} />
+                  );
                 } else {
                   return false;
                 }
