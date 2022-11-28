@@ -3,7 +3,7 @@ import axios from 'axios';
 import { store } from 'store/store';
 
 const Api = axios.create({
-    baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
+    baseURL: 'https://hvwh7akxxj.execute-api.us-east-1.amazonaws.com/Prod',
     headers: {
         'Accept': 'application/json',
     },
@@ -32,7 +32,7 @@ Api.interceptors.response.use(
 
 
 const AuthApi = axios.create({
-    baseURL: 'https://jafzvqaxyk.execute-api.us-east-1.amazonaws.com/Prod',
+    baseURL: 'https://hvwh7akxxj.execute-api.us-east-1.amazonaws.com/Prod',
     auth: {
         username: "cartaonacaosaude",
         password: 'tw7qQFcNlh'
