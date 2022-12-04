@@ -8,3 +8,4 @@ export const packagesFailure = (error) => action(packagesTypes.PACKAGES_FAILURE,
 export const registerRequest = (data) => action(packagesTypes.REGISTER_REQUEST, { data });
 export const registerSuccess = (data) => action(packagesTypes.REGISTER_SUCCESS, { data });
 export const registerFailure = (error) => action(packagesTypes.REGISTER_FAILURE, { error });
+export const registerReset = () => action(packagesTypes.REGISTER_RESET);

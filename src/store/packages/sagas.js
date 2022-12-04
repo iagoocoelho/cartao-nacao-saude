@@ -1,6 +1,6 @@
 import { call, put } from 'redux-saga/effects';
 import { Api } from 'common/api';
-import { packagesSuccess, packagesFailure, registerSuccess, registerFailure } from './actions';
+import { packagesSuccess, packagesFailure, registerSuccess, registerFailure, registerReset } from './actions';
 import { showToastr } from 'store/toast/actions'
 
 export function* packagesRequest() {
@@ -17,6 +17,7 @@ export function* registerRequest(action) {
         const { data } = yield call(Api.post, "/customer", action.payload.data);
         yield put(registerSuccess(data));
         yield put(showToastr({ type: 'success', message: 'Cadastrado com sucesso!' }));
+        yield put(registerReset());
     } catch (error) {
         yield put(showToastr({ type: 'danger', message: error.data.message }));
         yield put(registerFailure(error.data));

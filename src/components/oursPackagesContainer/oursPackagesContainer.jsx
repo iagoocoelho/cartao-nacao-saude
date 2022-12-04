@@ -4,18 +4,18 @@ import { MainContainer } from "components/container/MainContainer";
 import CardPackage from "./cardPackage";
 import { connect } from "react-redux";
 import * as packagesActions from "store/packages/actions";
+import { replaceOnlyNumber } from "common/utils";
 import "./oursPackagesContainer.scss";
 
 export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
+  const isFirstRender = useRef(true);
   const { search } = useLocation();
   const [packages, setPackages] = useState([]);
   const [vendorId, setVendorId] = useState("");
 
   useMemo(() => {
-    if (search) setVendorId(search);
+    if (search) setVendorId(replaceOnlyNumber(search));
   }, [search]);
-
-  const isFirstRender = useRef(true);
 
   useEffect(() => {
     if (!packagesState.loading && !!packagesState.packages.length) {
@@ -41,7 +41,7 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
               packages.map((item) => {
                 if (item.active) {
                   return (
-                    <CardPackage data={{ ...item, vendor_cpf: vendorId }} />
+                    <CardPackage key={item.id} data={{ ...item, vendor_cpf: vendorId }} />
                   );
                 } else {
                   return false;

@@ -46,17 +46,13 @@ export const Register = ({ registerRequest, registerState }) => {
     return text.replace(/[^\w\s]|_/gi, "");
   };
 
-  const replaceOnlyNumber = (text) => {
-    return text.match(/\d+/g).pop();
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
 
     let newData = {
       ...data,
       package_id: packageId,
-      vendor_cpf: state.vendor_cpf ? replaceOnlyNumber(state.vendor_cpf) : "",
+      vendor_cpf: state.vendor_cpf ? state.vendor_cpf : "",
       cpf: replaceSpecialCharacter(data.cpf),
       rg: replaceSpecialCharacter(data.rg),
       zip_code: replaceSpecialCharacter(data.zip_code),

@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import * as authActions from "store/auth/actions";
 import "./app.scss";
 import { useRef, useEffect } from "react";
+import Spinner from "react-bootstrap/Spinner";
 
-function App({ authRequest, verifyTokenRequest, auth_token }) {
+function App({ authRequest, verifyTokenRequest, auth_token, auth_state }) {
   const isFirstRender = useRef(true);
 
   useEffect(() => {
@@ -19,12 +20,21 @@ function App({ authRequest, verifyTokenRequest, auth_token }) {
     }
   }, [authRequest, auth_token, verifyTokenRequest]);
 
-  return <Routers />;
+  if (auth_state.loading || auth_state.tokenVerify.loading) {
+    return (
+      <div className="loading-container">
+        <Spinner animation="border" role="status" />
+      </div>
+    );
+  } else {
+    return <Routers />;
+  }
 }
 
 const mapStateToProps = (state) => {
   return {
     auth_token: state.auth.data?.access_token,
+    auth_state: state.auth,
   };
 };
 
