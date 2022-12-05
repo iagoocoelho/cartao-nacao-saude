@@ -22,10 +22,6 @@ export const Header = () => {
         expand="lg"
         className="shadow-sm p-0 navbar navbar-expand-lg navbar-light d-flex flex-column"
       >
-        <div className="bg-green text-white fs-6 text-center py-3 w-100 d-flex d-sm-block flex-column">
-          Peça agora seu cartão também pelo telefone:
-          <strong className="fs-4"> +55 11 91623-5625</strong>
-        </div>
         <Container className="p-4">
           <Navbar.Brand href="#">
             <img src={logo} className="img-fluid" alt="logo cartão saúde" />

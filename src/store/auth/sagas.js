@@ -17,6 +17,6 @@ export function* verifyTokenRequest() {
         yield put(verifyTokenSuccess(data));
     } catch (error) {
         yield put(retryToken());
-        yield put(verifyTokenFailure(error.data));
+        yield put(verifyTokenFailure(error));
     }
 }

@@ -17,7 +17,9 @@ const reducer = (state = INITIAL_STATE, action) => {
         case authTypes.AUTH_REQUEST:
             return {
                 ...state,
-                loading: true
+                loading: true,
+                success: false,
+                error: false,
             };
         case authTypes.AUTH_SUCCESS:
             return {
@@ -40,7 +42,9 @@ const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 tokenVerify: {
                     ...state.tokenVerify,
-                    loading: true
+                    loading: true,
+                    success: false,
+                    error: false,
                 }
             };
         case authTypes.VERIFY_TOKEN_SUCCESS:
@@ -48,7 +52,6 @@ const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 tokenVerify: {
                     ...state.tokenVerify,
-                    message: 'Token válido',
                     success: true,
                     loading: false,
                     error: false
@@ -59,7 +62,7 @@ const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 tokenVerify: {
                     ...state.tokenVerify,
-                    message: action.payload.error.message,
+                    message: action.payload.error,
                     success: false,
                     loading: false,
                     error: true

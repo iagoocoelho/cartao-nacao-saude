@@ -20,7 +20,7 @@ function App({ authRequest, verifyTokenRequest, auth_token, auth_state }) {
     }
   }, [authRequest, auth_token, verifyTokenRequest]);
 
-  if (auth_state.loading || auth_state.tokenVerify.loading) {
+  if (auth_state.loading || auth_state.tokenVerify.loading || auth_state.tokenVerify.error) {
     return (
       <div className="loading-container">
         <Spinner animation="border" role="status" />
