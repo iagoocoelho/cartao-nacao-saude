@@ -24,11 +24,11 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
   }, [packagesState.loading, packagesState.packages]);
 
   useEffect(() => {
-    if (isFirstRender.current) {
+    if (isFirstRender.current && packagesState.packages.length === 0) {
       isFirstRender.current = false;
       packagesRequest();
     }
-  }, [packagesRequest]);
+  }, [packagesRequest, packagesState.packages.length]);
 
   return (
     <div className="ours-packages" id="pacotes">
