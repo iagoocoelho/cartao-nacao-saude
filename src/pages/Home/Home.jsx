@@ -40,39 +40,30 @@ export const Home = ({
     }
   }, [authRequest, auth_token, verifyTokenRequest]);
 
+  return (
+    <>
+      <Header />
 
-  if (auth_state.loading || auth_state.tokenVerify.loading) {
-    return (
-      <div className="loading-container">
-        <Spinner animation="border" role="status" />
-      </div>
-    );
-  } else {
-    return (
-      <>
-        <Header />
+      <MainContainer>
+        <MainCarousel />
+      </MainContainer>
 
-        <MainContainer>
-          <MainCarousel />
-        </MainContainer>
-
-        <CardExplainContainer />
-        <HealthExplainContainer />
-        <BenefitsContainer />
-        <TelemedicineEinstein />
-        <PortoSeguroContainer />
-        <PharmacyContainer />
-        <ExamsContainer />
-        <MedicalAppointments />
-        <OdontologyContainer />
-        <CruzeiroDoSulContainer />
-        <OursPackagesContainer />
-        <GetContactContainer />
-        <PaymentConditions />
-        <FaqContainer />
-      </>
-    );
-  }
+      <CardExplainContainer />
+      <HealthExplainContainer />
+      <BenefitsContainer />
+      <TelemedicineEinstein />
+      <PortoSeguroContainer />
+      <PharmacyContainer />
+      <ExamsContainer />
+      <MedicalAppointments />
+      <OdontologyContainer />
+      <CruzeiroDoSulContainer />
+      <OursPackagesContainer />
+      <GetContactContainer />
+      <PaymentConditions />
+      <FaqContainer />
+    </>
+  );
 };
 
 const mapStateToProps = (state) => {

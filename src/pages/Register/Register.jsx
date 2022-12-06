@@ -42,6 +42,12 @@ export const Register = ({ registerRequest, registerState }) => {
     zip_code: "",
   });
 
+  const [radio, setRadio] = useState({
+    majority: false,
+    terms: false,
+    notifications: false,
+  });
+
   const replaceSpecialCharacter = (text) => {
     return text.replace(/[^\w\s]|_/gi, "");
   };
@@ -319,12 +325,21 @@ export const Register = ({ registerRequest, registerState }) => {
           )}
 
           <Form.Group className="mb-3">
-            <Form.Check type="checkbox" label="Maior de 18 anos" />
+            <Form.Check
+              type="checkbox"
+              label="Maior de 18 anos"
+              onChange={(e) => {
+                setRadio({ ...radio, majority: e.target.checked });
+              }}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Check
               type="checkbox"
+              onChange={(e) => {
+                setRadio({ ...radio, terms: e.target.checked });
+              }}
               label={
                 <span>
                   Li e aceito os termos e condições.
@@ -343,6 +358,9 @@ export const Register = ({ registerRequest, registerState }) => {
           <Form.Group className="mb-3">
             <Form.Check
               type="checkbox"
+              onChange={(e) => {
+                setRadio({ ...radio, notifications: e.target.checked });
+              }}
               label="Eu aceito notificações e contato via SMS, e-mail ou telefone"
             />
           </Form.Group>
@@ -350,7 +368,9 @@ export const Register = ({ registerRequest, registerState }) => {
           <Row>
             <Col className="text-center text-sm-end py-4">
               <button
-                disabled={registerState.loading}
+                disabled={
+                  registerState.loading || !radio.majority || !radio.terms
+                }
                 variant="primary"
                 className="btn-green"
                 type="submit"

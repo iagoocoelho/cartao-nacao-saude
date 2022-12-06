@@ -83,6 +83,15 @@ button, a {
       color: $mainColor;
     }
   }
+
+  &:disabled {
+    background-color: #adb5bd;
+    cursor: no-drop;
+    
+    &:hover {
+      background-color: #adb5bd;   
+    }
+  }
 }
 
 .main-color,
