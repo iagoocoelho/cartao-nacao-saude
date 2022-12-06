@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { connect } from "react-redux";
+import * as authActions from "store/auth/actions";
+import Spinner from "react-bootstrap/Spinner";
 import { MainContainer } from "components/container/MainContainer";
 import Header from "components/header/Header";
 import MainCarousel from "components/mainCarousel/MainCarousel";
@@ -17,31 +20,77 @@ import PaymentConditions from "components/paymentConditions/paymentConditions";
 import FaqContainer from "components/Faq/FaqContainer";
 import OdontologyContainer from "components/odontologyContainer/odontologyContainer";
 
-export const Home = () => {
-  return (
-    <>
-      <Header />
+export const Home = ({
+  authRequest,
+  verifyTokenRequest,
+  auth_token,
+  auth_state,
+}) => {
+  const isFirstRender = useRef(true);
 
-      <MainContainer>
-        <MainCarousel />
-      </MainContainer>
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
 
-      <CardExplainContainer />
-      <HealthExplainContainer />
-      <BenefitsContainer />
-      <TelemedicineEinstein />
-      <PortoSeguroContainer />
-      <PharmacyContainer />
-      <ExamsContainer />
-      <MedicalAppointments />
-      <OdontologyContainer />
-      <CruzeiroDoSulContainer />
-      <OursPackagesContainer />
-      <GetContactContainer />
-      <PaymentConditions />
-      <FaqContainer />
-    </>
-  );
+      if (auth_token) {
+        verifyTokenRequest();
+      } else {
+        authRequest();
+      }
+    }
+  }, [authRequest, auth_token, verifyTokenRequest]);
+
+
+  if (auth_state.loading || auth_state.tokenVerify.loading) {
+    return (
+      <div className="loading-container">
+        <Spinner animation="border" role="status" />
+      </div>
+    );
+  } else {
+    return (
+      <>
+        <Header />
+
+        <MainContainer>
+          <MainCarousel />
+        </MainContainer>
+
+        <CardExplainContainer />
+        <HealthExplainContainer />
+        <BenefitsContainer />
+        <TelemedicineEinstein />
+        <PortoSeguroContainer />
+        <PharmacyContainer />
+        <ExamsContainer />
+        <MedicalAppointments />
+        <OdontologyContainer />
+        <CruzeiroDoSulContainer />
+        <OursPackagesContainer />
+        <GetContactContainer />
+        <PaymentConditions />
+        <FaqContainer />
+      </>
+    );
+  }
 };
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    auth_token: state.auth.data?.access_token,
+    auth_state: state.auth,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    authRequest: () => {
+      dispatch(authActions.authRequest());
+    },
+    verifyTokenRequest: () => {
+      dispatch(authActions.verifyTokenRequest());
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

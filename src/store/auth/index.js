@@ -51,7 +51,6 @@ const reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 tokenVerify: {
-                    ...state.tokenVerify,
                     success: true,
                     loading: false,
                     error: false

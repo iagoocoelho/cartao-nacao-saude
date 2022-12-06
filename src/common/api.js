@@ -1,7 +1,6 @@
 
 import axios from 'axios';
 import { store } from 'store/store';
-import { authRequest } from '../store/auth/sagas';
 
 const Api = axios.create({
     baseURL: 'https://hvwh7akxxj.execute-api.us-east-1.amazonaws.com/Prod',
@@ -24,9 +23,6 @@ Api.interceptors.response.use(
             console.log('Ops, ocorreu um erro, tente novamente!');
         } else if (error.response.status === 404) {
             console.log('Ops, não encontrado!');
-        } else if (error.response.status === 403) {
-            authRequest()
-            throw error.response.data.message
         } else {
             throw error.response
         }
