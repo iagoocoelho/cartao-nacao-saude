@@ -9,7 +9,7 @@ import * as packagesActions from "store/packages/actions";
 import contrato from "assets/docs/Contrato-de-Servicos-Cartao-Nacao-Saude-e-Beneficios-2022.pdf";
 import "./register.scss";
 
-export const Register = ({ registerRequest, registerState }) => {
+export const Register = ({ registerRequest, registerState, registerReset }) => {
   const { pathname, state } = useLocation();
   const [path, setPath] = useState("");
   const [packageId, setPackageId] = useState(0);
@@ -17,6 +17,12 @@ export const Register = ({ registerRequest, registerState }) => {
   useMemo(() => {
     setPath(pathname.split("/")[1]);
   }, [pathname]);
+
+  useEffect(() => {
+    return () => {
+      registerReset()
+    }
+  }, [registerReset]);
 
   useEffect(() => {
     if (state?.packageId !== null) setPackageId(state?.packageId);
@@ -395,6 +401,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     registerRequest: (data) => {
       dispatch(packagesActions.registerRequest(data));
+    },
+    registerReset: () => {
+      dispatch(packagesActions.registerReset());
     },
   };
 };
