@@ -9,7 +9,7 @@ export function* packagesRequest() {
         const { data } = yield call(Api.get, "/packages");
         yield put(packagesSuccess(data));
     } catch (error) {
-        yield put(packagesFailure());
+        yield put(packagesFailure(error));
     }
 }
 

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { connect } from "react-redux";
 import * as authActions from "store/auth/actions";
-import Spinner from "react-bootstrap/Spinner";
 import { MainContainer } from "components/container/MainContainer";
 import Header from "components/header/Header";
 import MainCarousel from "components/mainCarousel/MainCarousel";
@@ -24,7 +23,6 @@ export const Home = ({
   authRequest,
   verifyTokenRequest,
   auth_token,
-  auth_state,
 }) => {
   const isFirstRender = useRef(true);
 

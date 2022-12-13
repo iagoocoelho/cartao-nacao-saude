@@ -7,7 +7,11 @@ import * as packagesActions from "store/packages/actions";
 import { replaceOnlyNumber } from "common/utils";
 import "./oursPackagesContainer.scss";
 
-export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
+export const OursPackagesContainer = ({
+  packagesRequest,
+  packagesState,
+  auth_state,
+}) => {
   const isFirstRender = useRef(true);
   const { search } = useLocation();
   const [packages, setPackages] = useState([]);
@@ -24,11 +28,20 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
   }, [packagesState.loading, packagesState.packages]);
 
   useEffect(() => {
-    if (isFirstRender.current && packagesState.packages.length === 0) {
+    if (
+      isFirstRender.current ||
+      (packagesState.packages.length === 0 &&
+        (auth_state.success || auth_state.tokenVerify.success))
+    ) {
       isFirstRender.current = false;
       packagesRequest();
     }
-  }, [packagesRequest, packagesState.packages.length]);
+  }, [
+    packagesRequest,
+    packagesState.packages.length,
+    auth_state.success,
+    auth_state.tokenVerify.success,
+  ]);
 
   return (
     <div className="ours-packages" id="pacotes">
@@ -41,7 +54,10 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
               packages.map((item) => {
                 if (item.active) {
                   return (
-                    <CardPackage key={item.id} data={{ ...item, vendor_cpf: vendorId }} />
+                    <CardPackage
+                      key={item.id}
+                      data={{ ...item, vendor_cpf: vendorId }}
+                    />
                   );
                 } else {
                   return false;
@@ -57,6 +73,7 @@ export const OursPackagesContainer = ({ packagesRequest, packagesState }) => {
 const mapStateToProps = (state) => {
   return {
     packagesState: state.packages.data,
+    auth_state: state.auth,
   };
 };
 
